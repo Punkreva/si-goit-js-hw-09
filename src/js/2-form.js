@@ -22,7 +22,7 @@ form.addEventListener("submit", event => {
   localStorage.removeItem("feedback-form-state");
   if (form.elements.email.value === "") {
     alert("Введіть електронну пошту");
-  } else if (form.elements.message.value === "") {
+  } else if (form.elements.message.value.trim() === "") {
     alert("Введіть повідомлення");
   }
   else {
